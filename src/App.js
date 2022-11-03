@@ -23,6 +23,7 @@ function App () {
   return (
     <ThemeProvider theme={darkTheme}>
       <Header/>
+      {tg?.colorScheme}
       <Routes>
         <Route index element={<ProductsList/>}/>
         <Route path={'/form'} element={<Form/>}/>
