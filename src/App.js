@@ -7,14 +7,14 @@ import ProductsList from './components/Lists/ProductsList'
 import Form from './components/Forms/Form'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 
-const theme = createTheme({
-  palette: {
-    mode: tg?.colorScheme,
-  },
-});
-
 function App () {
   const { tg } = useTelegram()
+
+  const theme = createTheme({
+    palette: {
+      mode: tg?.colorScheme,
+    },
+  });
 
   useEffect(() => {
     tg.ready()
