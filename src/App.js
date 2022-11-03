@@ -9,7 +9,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles'
 
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: tg?.colorScheme,
   },
 });
 
@@ -23,7 +23,6 @@ function App () {
   return (
     <ThemeProvider theme={darkTheme}>
       <Header/>
-      {tg?.colorScheme}
       <Routes>
         <Route index element={<ProductsList/>}/>
         <Route path={'/form'} element={<Form/>}/>
