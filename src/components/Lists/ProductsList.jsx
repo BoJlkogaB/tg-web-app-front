@@ -10,38 +10,96 @@ import {
 
 const ProductsList = () => {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} marginTop={2}>
       <Grid xs={12}>
-        <Card sx={{ width: 275, margin: 'auto' }}>
+        <Card sx={{ width: 325, margin: 'auto', marginTop: 2, border: '1px solid black' }}>
           <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              Word of the Day
-            </Typography>
-            <Typography variant="h5" component="div">
-              be nev o lent
+            <Typography variant="h6" component="div">
+              Создание умного чат-бота
             </Typography>
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
-              adjective
+              от 15.000₽
             </Typography>
             <Typography variant="body2">
-              well meaning and kindly.
-              <br />
-              {'"a benevolent smile"'}
+              Описание...
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Learn More</Button>
+            <Button size="small" sx={{ marginLeft: 'auto' }}>Заказать</Button>
           </CardActions>
         </Card>
       </Grid>
       <Grid xs={12}>
-        <Card>xs=4</Card>
+        <Card sx={{ width: 325, margin: 'auto', marginTop: 2, border: '1px solid black' }}>
+          <CardContent>
+            <Typography variant="h6" component="div">
+              Создание интернет-магазина с веб-интерфейсом в Telegram
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              от 50.000₽
+            </Typography>
+            <Typography variant="body2">
+              Описание...
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" sx={{ marginLeft: 'auto' }}>Заказать</Button>
+          </CardActions>
+        </Card>
       </Grid>
       <Grid xs={12}>
-        <Card>xs=4</Card>
+        <Card sx={{ width: 325, margin: 'auto', marginTop: 2, border: '1px solid black' }}>
+          <CardContent>
+            <Typography variant="h6" component="div">
+              Создание web интернет-магазина
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              от 75.000₽
+            </Typography>
+            <Typography variant="body2">
+              Описание...
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" sx={{ marginLeft: 'auto' }}>Заказать</Button>
+          </CardActions>
+        </Card>
       </Grid>
       <Grid xs={12}>
-        <Card>xs=4</Card>
+        <Card sx={{ width: 325, margin: 'auto', marginTop: 2, border: '1px solid black' }}>
+          <CardContent>
+            <Typography variant="h6" component="div">
+              Создание лендинга
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              от 30.000₽
+            </Typography>
+            <Typography variant="body2">
+              Описание...
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" sx={{ marginLeft: 'auto' }}>Заказать</Button>
+          </CardActions>
+        </Card>
+      </Grid>
+      <Grid xs={12}>
+        <Card sx={{ width: 325, margin: 'auto', marginTop: 2, border: '1px solid black' }}>
+          <CardContent>
+            <Typography variant="h6" component="div">
+              Кастомное решение
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              от 10.000₽
+            </Typography>
+            <Typography variant="body2">
+              Описание...
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" sx={{ marginLeft: 'auto' }}>Заказать</Button>
+          </CardActions>
+        </Card>
       </Grid>
     </Grid>
   )
