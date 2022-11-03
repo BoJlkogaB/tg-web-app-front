@@ -1,6 +1,13 @@
 import React from 'react'
 import './ProductsList.css'
-import { Card, Grid } from '@mui/material'
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Grid,
+  Typography,
+} from '@mui/material'
 
 const ProductsList = () => {
   return (
