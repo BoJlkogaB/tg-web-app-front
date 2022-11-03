@@ -7,7 +7,7 @@ import ProductsList from './components/Lists/ProductsList'
 import Form from './components/Forms/Form'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 
-const darkTheme = createTheme({
+const theme = createTheme({
   palette: {
     mode: tg?.colorScheme,
   },
@@ -21,7 +21,7 @@ function App () {
   }, [])
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme}>
       <Header/>
       <Routes>
         <Route index element={<ProductsList/>}/>
