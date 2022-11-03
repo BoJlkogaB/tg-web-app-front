@@ -5,22 +5,30 @@ import { useTelegram } from './hooks/useTelegram'
 import { Route, Routes } from 'react-router-dom'
 import ProductsList from './components/Lists/ProductsList'
 import Form from './components/Forms/Form'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 function App () {
-  const { tg, onToggleButton } = useTelegram()
+  const { tg } = useTelegram()
 
   useEffect(() => {
     tg.ready()
   }, [])
 
   return (
-    <div className="App">
+    <ThemeProvider theme={darkTheme}>
+      {tg}
       <Header/>
       <Routes>
         <Route index element={<ProductsList/>}/>
         <Route path={'/form'} element={<Form/>}/>
       </Routes>
-    </div>
+    </ThemeProvider>
   )
 }
 
