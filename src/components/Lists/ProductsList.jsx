@@ -1,5 +1,4 @@
 import React from 'react'
-import './ProductsList.css'
 import {
   Button,
   Card,
