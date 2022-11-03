@@ -13,7 +13,7 @@ const ProductsList = () => {
   return (
     <Grid container spacing={2}>
       <Grid xs={12}>
-        <Card sx={{ minWidth: 275 }}>
+        <Card sx={{ width: 275, margin: 'auto' }}>
           <CardContent>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
               Word of the Day
