@@ -22,7 +22,6 @@ function App () {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      {tg}
       <Header/>
       <Routes>
         <Route index element={<ProductsList/>}/>
