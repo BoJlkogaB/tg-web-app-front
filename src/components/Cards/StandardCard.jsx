@@ -20,6 +20,8 @@ const StandardCard = ({ name, price, description }) => {
       userId: user.id,
     }
 
+    alert('123');
+
     fetch('http://5.188.139.166:8000/order', {
       method: 'POST',
       headers: {
