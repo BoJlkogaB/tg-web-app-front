@@ -10,10 +10,11 @@ import {
 import { useTelegram } from '../../hooks/useTelegram'
 
 const StandardCard = ({ name, price, description }) => {
-  const { user } = useTelegram()
+  const { user, queryId } = useTelegram()
 
   const onSendData = () => {
     const data = {
+      queryId,
       order: name,
       userName: user.username,
       userId: user.id,
