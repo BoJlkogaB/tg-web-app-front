@@ -16,7 +16,7 @@ const StandardCard = ({ name, price, description }) => {
     queryId,
     order: name,
     userName: user?.username,
-    userId: user.id,
+    userId: user?.id,
   }
 
   const onSendData = () => {
