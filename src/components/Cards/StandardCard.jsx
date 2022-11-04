@@ -14,7 +14,7 @@ const StandardCard = ({ name, price, description }) => {
 
   const onSendData = async () => {
     const data = {
-      queryId: 'AAEuTq8bAAAAAC5OrxsrH4ux',
+      queryId: queryId,
       order: name,
       userName: 'RealChewIT',
       userId: '464473646',
