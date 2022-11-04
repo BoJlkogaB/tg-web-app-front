@@ -11,15 +11,14 @@ import { useTelegram } from '../../hooks/useTelegram'
 
 const StandardCard = ({ name, price, description }) => {
   const { user, queryId } = useTelegram()
+  const data = {
+    queryId,
+    order: name,
+    userName: user?.username,
+    userId: user?.id,
+  }
 
   const onSendData = () => {
-    const data = {
-      queryId,
-      order: name,
-      userName: user?.username,
-      userId: user?.id,
-    }
-
     fetch('http://5.188.139.166:8000/order', {
       method: 'POST',
       headers: {
