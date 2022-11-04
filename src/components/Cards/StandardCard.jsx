@@ -43,7 +43,7 @@ const StandardCard = ({ name, price, description }) => {
       }}>
         <CardContent>
           <Typography variant="h6" component="div">
-            {JSON.stringify(data)}
+            {data?.queryId}
           </Typography>
           <Typography variant="h6" component="div">
             {name}
