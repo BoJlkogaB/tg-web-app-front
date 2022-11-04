@@ -25,7 +25,7 @@ const Header = () => {
           >
             <CloseIcon />
           </IconButton>
-          <Typography variant="h6" marginLeft='auto'>{user?.username ?? 'Login'}</Typography>
+          <Typography variant="h6" marginLeft='auto'>{user?.first_name ?? 'Login'}</Typography>
         </Toolbar>
       </AppBar>
     </Box>
