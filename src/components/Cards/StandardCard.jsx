@@ -11,18 +11,19 @@ import { useTelegram } from '../../hooks/useTelegram'
 
 const StandardCard = ({ name, price, description }) => {
   const { user, queryId } = useTelegram()
-  const data = {
-    queryId,
-    order: name,
-    userName: user?.username,
-    userId: user?.id,
-  }
 
-  const onSendData = () => {
-    fetch('http://5.188.139.166:8000/order', {
+  const onSendData = async () => {
+    const data = {
+      queryId,
+      order: name,
+      userName: user?.username,
+      userId: user?.id,
+    }
+
+    await fetch('http://5.188.139.166:8000/order', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json;charset=utf-8',
       },
       body: JSON.stringify(data),
     })
@@ -37,9 +38,6 @@ const StandardCard = ({ name, price, description }) => {
         border: '1px solid black',
       }}>
         <CardContent>
-          <Typography variant="h6" component="div">
-            {queryId}
-          </Typography>
           <Typography variant="h6" component="div">
             {name}
           </Typography>
