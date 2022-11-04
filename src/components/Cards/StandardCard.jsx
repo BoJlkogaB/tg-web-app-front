@@ -8,30 +8,25 @@ import {
   Typography,
 } from '@mui/material'
 import { useTelegram } from '../../hooks/useTelegram'
+import axios from 'axios'
 
 const StandardCard = ({ name, price, description }) => {
   const { user, queryId } = useTelegram()
 
   const onSendData = async () => {
-    alert('click');
     const data = {
-      // queryId: 'AAEuTq8bAAAAAC5OrxtnDakr',
+      // queryId: '',
       queryId,
       order: name,
       userName: 'RealChewIT',
       userId: '464473646',
     }
-    alert('data');
 
-    const response = await fetch('http://5.188.139.166:8000/order', {
-      method: 'POST',
+    axios.post('http://5.188.139.166:8000/order', JSON.stringify(data), {
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
       },
-      body: JSON.stringify(data),
-    })
-
-    alert(response.status);
+    }).then((response) => alert(response.status))
   }
 
   return (
@@ -57,7 +52,8 @@ const StandardCard = ({ name, price, description }) => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button onClick={onSendData} size="small" sx={{ marginLeft: 'auto' }}>Заказать</Button>
+          <Button onClick={onSendData} size="small"
+                  sx={{ marginLeft: 'auto' }}>Заказать</Button>
         </CardActions>
       </Card>
     </Grid>
