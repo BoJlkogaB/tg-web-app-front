@@ -15,7 +15,7 @@ const StandardCard = ({ name, price, description }) => {
   const data = {
     queryId,
     order: name,
-    userName: user.username,
+    userName: user?.username,
     userId: user.id,
   }
 
