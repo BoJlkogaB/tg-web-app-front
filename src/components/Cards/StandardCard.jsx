@@ -14,19 +14,22 @@ const StandardCard = ({ name, price, description }) => {
 
   const onSendData = async () => {
     const data = {
-      queryId: queryId,
+      // queryId: '',
+      queryId,
       order: name,
       userName: 'RealChewIT',
       userId: '464473646',
     }
 
-    await fetch('http://5.188.139.166:8000/order', {
+    const response = await fetch('http://5.188.139.166:8000/order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
       },
       body: JSON.stringify(data),
     })
+
+    alert(response.status);
   }
 
   return (
