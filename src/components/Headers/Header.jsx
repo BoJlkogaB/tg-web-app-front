@@ -10,7 +10,7 @@ import {
 import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
-  const { user, onClose } = useTelegram()
+  const { user, queryId, onClose } = useTelegram()
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -26,6 +26,7 @@ const Header = () => {
             <CloseIcon />
           </IconButton>
           <Typography variant="h6" marginLeft='auto'>{user?.first_name ?? 'Login'}</Typography>
+          <Typography variant="h6" marginLeft='auto'>{queryId ?? 'Login'}</Typography>
         </Toolbar>
       </AppBar>
     </Box>
