@@ -15,11 +15,10 @@ const StandardCard = ({ name, price, description }) => {
 
   const onSendData = async () => {
     const data = {
-      // queryId: '',
       queryId,
       order: name,
-      userName: 'RealChewIT',
-      userId: '464473646',
+      userName: user?.username,
+      userId: user?.id,
     }
 
     axios.post('http://5.188.139.166:8000/order', JSON.stringify(data), {
