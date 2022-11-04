@@ -13,13 +13,15 @@ const StandardCard = ({ name, price, description }) => {
   const { user, queryId } = useTelegram()
 
   const onSendData = async () => {
+    alert('click');
     const data = {
-      // queryId: '',
+      // queryId: 'AAEuTq8bAAAAAC5OrxtnDakr',
       queryId,
       order: name,
       userName: 'RealChewIT',
       userId: '464473646',
     }
+    alert('data');
 
     const response = await fetch('http://5.188.139.166:8000/order', {
       method: 'POST',
