@@ -38,6 +38,9 @@ const StandardCard = ({ name, price, description }) => {
       }}>
         <CardContent>
           <Typography variant="h6" component="div">
+            {queryId}
+          </Typography>
+          <Typography variant="h6" component="div">
             {name}
           </Typography>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
