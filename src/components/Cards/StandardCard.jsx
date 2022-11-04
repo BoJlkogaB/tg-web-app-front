@@ -20,14 +20,14 @@ const StandardCard = ({ name, price, description }) => {
       userId: user.id,
     }
 
-    alert(data);
+    alert(JSON.stringify(data));
 
     fetch('http://5.188.139.166:8000/order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      data,
+      body: data,
     })
   }
 
