@@ -14,10 +14,10 @@ const StandardCard = ({ name, price, description }) => {
 
   const onSendData = async () => {
     const data = {
-      queryId,
+      queryId: 'AAEuTq8bAAAAAC5OrxsrH4ux',
       order: name,
-      userName: user?.username,
-      userId: user?.id,
+      userName: 'RealChewIT',
+      userId: '464473646',
     }
 
     await fetch('http://5.188.139.166:8000/order', {
@@ -38,6 +38,9 @@ const StandardCard = ({ name, price, description }) => {
         border: '1px solid black',
       }}>
         <CardContent>
+          <Typography variant="h6" component="div">
+            {queryId}
+          </Typography>
           <Typography variant="h6" component="div">
             {name}
           </Typography>
