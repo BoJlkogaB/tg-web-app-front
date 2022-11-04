@@ -25,7 +25,7 @@ const StandardCard = ({ name, price, description }) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data),
+      data,
     })
   }
 
