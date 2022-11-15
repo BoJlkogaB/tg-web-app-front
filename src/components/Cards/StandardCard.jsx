@@ -9,8 +9,9 @@ import {
 } from '@mui/material'
 import { useTelegram } from '../../hooks/useTelegram'
 import axios from 'axios'
+import DescriptionList from '../Lists/DescriptionList'
 
-const StandardCard = ({ name, price, description }) => {
+const StandardCard = ({ name, price, description, descriptionItems }) => {
   const { user, queryId } = useTelegram()
 
   const onSendData = async () => {
@@ -49,6 +50,7 @@ const StandardCard = ({ name, price, description }) => {
           <Typography variant="body2">
             {description}
           </Typography>
+          <DescriptionList items={descriptionItems}/>
         </CardContent>
         <CardActions>
           <Button onClick={onSendData} size="small"
