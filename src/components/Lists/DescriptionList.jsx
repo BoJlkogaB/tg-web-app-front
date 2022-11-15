@@ -1,5 +1,10 @@
 import React from 'react'
-import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
+import {
+  List,
+  ListItem,
+  ListItemIcon,
+  Typography,
+} from '@mui/material'
 
 const DescriptionList = ({items}) => {
   function generate (items) {
@@ -8,10 +13,9 @@ const DescriptionList = ({items}) => {
         <ListItemIcon>
           {item.icon}
         </ListItemIcon>
-        <ListItemText
-          sx={{fontSize:'0.8rem'}}
-          primary={item.text}
-        />
+        <Typography sx={{fontSize:'0.7rem'}}>
+          {item.text}
+        </Typography>
       </ListItem>,
     )
   }
