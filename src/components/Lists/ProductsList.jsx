@@ -4,6 +4,10 @@ import {
 } from '@mui/material'
 import StandardCard from '../Cards/StandardCard'
 import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined'
+import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined'
+import PrivacyTipOutlinedIcon from '@mui/icons-material/PrivacyTipOutlined'
+import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined'
+import Diversity1OutlinedIcon from '@mui/icons-material/Diversity1Outlined'
 
 const ProductsList = () => {
   return (
@@ -18,11 +22,11 @@ const ProductsList = () => {
             text: 'Детально проанализируем Вашу проблему и предложим лучшее решение',
           },
           {
-            icon: <AnalyticsOutlinedIcon/>,
+            icon: <SettingsSuggestOutlinedIcon/>,
             text: 'Сами всё настроем и тщательно протестируем',
           },
           {
-            icon: <AnalyticsOutlinedIcon/>,
+            icon: <PrivacyTipOutlinedIcon/>,
             text: 'Дополнительно обеспечим месяц поддержки бота',
           },
         ]}
@@ -33,15 +37,15 @@ const ProductsList = () => {
         description="Увеличьте свою прибыль за счёт продаж через Telegram!"
         descriptionItems={[
           {
-            icon: <AnalyticsOutlinedIcon/>,
+            icon: <MonetizationOnOutlinedIcon/>,
             text: 'Создадим для Вас новый источник дохода на примере @DurgerKingBot',
           },
           {
-            icon: <AnalyticsOutlinedIcon/>,
+            icon: <Diversity1OutlinedIcon/>,
             text: 'Удивим Ваших клиентов и конкурентов',
           },
           {
-            icon: <AnalyticsOutlinedIcon/>,
+            icon: <PrivacyTipOutlinedIcon/>,
             text: 'Дополнительно обеспечим месяц поддержки бота',
           },
         ]}
