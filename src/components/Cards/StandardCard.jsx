@@ -22,7 +22,7 @@ const StandardCard = ({ name, price, description, descriptionItems }) => {
       userId: user?.id,
     }
 
-    axios.post('http://5.188.139.166:8000/order', JSON.stringify(data), {
+    axios.post('https://spein-app.ru/order', JSON.stringify(data), {
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
       },
