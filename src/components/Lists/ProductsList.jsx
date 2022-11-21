@@ -13,25 +13,6 @@ const ProductsList = () => {
   return (
     <Grid container spacing={2} marginTop={2} marginBottom={4}>
       <StandardCard
-        name="Создание умного чат-бота"
-        price="15.000"
-        description="Улучшите свои отношения с клиентом за счёт воронки продаж, постоянного контакта с ним или моментальных ответов на его вопросы."
-        descriptionItems={[
-          {
-            icon: <AnalyticsOutlinedIcon/>,
-            text: 'Детально проанализируем Вашу проблему и предложим лучшее решение',
-          },
-          {
-            icon: <SettingsSuggestOutlinedIcon/>,
-            text: 'Сами всё настроем и тщательно протестируем',
-          },
-          {
-            icon: <PrivacyTipOutlinedIcon/>,
-            text: 'Дополнительно обеспечим месяц поддержки бота',
-          },
-        ]}
-      />
-      <StandardCard
         name="Создание web интернет-магазина в Telegram"
         price="50.000"
         description="Увеличьте свою прибыль за счёт продаж через Telegram!"
@@ -43,6 +24,25 @@ const ProductsList = () => {
           {
             icon: <Diversity1OutlinedIcon/>,
             text: 'Удивим Ваших клиентов и конкурентов',
+          },
+          {
+            icon: <PrivacyTipOutlinedIcon/>,
+            text: 'Дополнительно обеспечим месяц поддержки бота',
+          },
+        ]}
+      />
+      <StandardCard
+        name="Создание умного чат-бота"
+        price="15.000"
+        description="Улучшите свои отношения с клиентом за счёт воронки продаж, постоянного контакта с ним или моментальных ответов на его вопросы."
+        descriptionItems={[
+          {
+            icon: <AnalyticsOutlinedIcon/>,
+            text: 'Детально проанализируем Вашу проблему и предложим лучшее решение',
+          },
+          {
+            icon: <SettingsSuggestOutlinedIcon/>,
+            text: 'Сами всё настроем и тщательно протестируем',
           },
           {
             icon: <PrivacyTipOutlinedIcon/>,
